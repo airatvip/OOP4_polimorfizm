@@ -1,6 +1,6 @@
 package transport;
 
-public interface Rival {
+public interface Rival  {
     String pitSop();
 
     String bestLapTime();

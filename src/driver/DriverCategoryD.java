@@ -5,7 +5,7 @@ import transport.Bus;
 
 import java.util.Objects;
 
-public class DriverCategoryD extends Driver<Bus> {
+public class DriverCategoryD extends Driver<Bus>  {
     public DriverCategoryD(String name, boolean driversLicense, int experience) {
         super(name, driversLicense, experience);
     }

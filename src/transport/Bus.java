@@ -1,6 +1,6 @@
 package transport;
 
-public class Bus extends Car implements Rival {
+public class Bus extends Car implements Rival  {
 
 
     public Bus(String brand, String model, double engineVolume) {

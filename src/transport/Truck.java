@@ -1,6 +1,6 @@
 package transport;
 
-public class Truck extends Car implements Rival, com.sun.jdi.connect.Transport {
+public class Truck extends Car implements Rival {
 
 
     public Truck(String brand, String model, double engineVolume) {
@@ -38,10 +38,7 @@ public class Truck extends Car implements Rival, com.sun.jdi.connect.Transport {
         return "transport.Truck{}";
     }
 
-    @Override
-    public String name() {
-        return null;
-    }
+
 }
 
 

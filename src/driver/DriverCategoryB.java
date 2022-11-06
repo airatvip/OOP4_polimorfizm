@@ -4,7 +4,7 @@ package driver;
 import transport.PassengerCar;
 
 
-public class DriverCategoryB extends Driver<PassengerCar> {
+public class DriverCategoryB extends Driver<PassengerCar>  {
 
 
     public DriverCategoryB(String name, boolean driversLicense, int experience) {

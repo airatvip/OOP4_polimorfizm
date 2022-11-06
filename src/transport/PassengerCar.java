@@ -2,7 +2,7 @@ package transport;
 
 import com.sun.jdi.connect.Transport;
 
-public class PassengerCar extends Car implements Rival {
+public class PassengerCar extends Car implements Rival  {
 
     public PassengerCar(String brand, String model, double engineVolume) {
         super(brand, model, engineVolume);

@@ -2,7 +2,7 @@ package transport;
 
 import java.util.Objects;
 
-public abstract class Car {
+public abstract class Car  {
     private String brand;
     private String model;
     private double engineVolume;
