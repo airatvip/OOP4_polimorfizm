@@ -2,12 +2,12 @@ package transport;
 
 import java.util.Objects;
 
-public abstract class Transport {
+public abstract class Car {
     private String brand;
     private String model;
     private double engineVolume;
 
-    public Transport(String brand, String model, double engineVolume) {
+    public Car(String brand, String model, double engineVolume) {
         if (brand == null || brand.isEmpty() || brand.isBlank()) {
             this.brand = "no info";
         } else this.brand = brand;
@@ -53,7 +53,7 @@ public abstract class Transport {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Transport transport = (Transport) o;
+        Car transport = (Car) o;
         return Double.compare(transport.engineVolume, engineVolume) == 0 && Objects.equals(brand, transport.brand) && Objects.equals(model, transport.model);
     }
 

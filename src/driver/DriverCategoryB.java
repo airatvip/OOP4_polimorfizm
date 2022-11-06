@@ -1,13 +1,16 @@
 package driver;
 
+
 import transport.PassengerCar;
 
-public class DriverCategoryB<T extends PassengerCar> extends Driver {
+
+public class DriverCategoryB extends Driver<PassengerCar> {
 
 
     public DriverCategoryB(String name, boolean driversLicense, int experience) {
         super(name, driversLicense, experience);
     }
+
 
     public final void toControlDriver(PassengerCar car) {
         if (isDriversLicense() == true) {

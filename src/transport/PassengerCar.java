@@ -1,11 +1,8 @@
 package transport;
 
-import driver.DriverCategoryD;
-import transport.Rival;
+import com.sun.jdi.connect.Transport;
 
-import java.util.Objects;
-
-public class PassengerCar extends Transport implements Rival {
+public class PassengerCar extends Car implements Rival {
 
     public PassengerCar(String brand, String model, double engineVolume) {
         super(brand, model, engineVolume);
@@ -41,4 +38,6 @@ public class PassengerCar extends Transport implements Rival {
     public String toString() {
         return "PassengerCar{}";
     }
+
+
 }

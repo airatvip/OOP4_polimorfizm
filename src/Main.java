@@ -7,9 +7,9 @@ import transport.Truck;
 
 public class Main {
     public static void main(String[] args) {
-        PassengerCar audi = new PassengerCar("AUDI","A4",2.0);
+        PassengerCar audi = new PassengerCar("AUDI", "A4", 2.0);
         PassengerCar bmw = new PassengerCar("BMW", "5 series", 2.0);
-        PassengerCar mb = new PassengerCar("Mercedes-Benz", "E200",2.0);
+        PassengerCar mb = new PassengerCar("Mercedes-Benz", "E200", 2.0);
 
         Truck volvo = new Truck("Volvo", "FH", 12.8);
         Truck scania = new Truck("Scania", "P-series", 12.7);
@@ -22,16 +22,15 @@ public class Main {
 
         System.out.println(audi);
 
-        DriverCategoryB<PassengerCar> smith = new DriverCategoryB <> ("Smith", true,10);
-        DriverCategoryC<Truck> alex = new DriverCategoryC <>("Alex", true, 5);
-        DriverCategoryD<Bus> sam = new DriverCategoryD <> ("Sam",true,9);
-        DriverCategoryD demis = new DriverCategoryD<>("Demis", false,0);
-
+        DriverCategoryB smith = new DriverCategoryB("Smith", true, 10);
+        DriverCategoryC alex = new DriverCategoryC("Alex", true, 5);
+        DriverCategoryD sam = new DriverCategoryD("Sam", true, 9);
+        DriverCategoryD demis = new DriverCategoryD("Demis", false, 0);
         smith.toControlDriver(audi);
         alex.toControlDriver(volvo);
         sam.toControlDriver(higer);
         demis.toControlDriver(higer);
-//        System.out.println(smith.refuelTheTransport());
+        System.out.println(smith.refuelTheTransport());
         System.out.println(sam);
         System.out.println(sam.stop());
         System.out.println(sam.start());

@@ -1,13 +1,11 @@
 package driver;
 
 import transport.Bus;
-import transport.PassengerCar;
-import transport.Rival;
-import transport.Truck;
+
 
 import java.util.Objects;
 
-public class DriverCategoryD<T extends Bus> extends Driver {
+public class DriverCategoryD extends Driver<Bus> {
     public DriverCategoryD(String name, boolean driversLicense, int experience) {
         super(name, driversLicense, experience);
     }

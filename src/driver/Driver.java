@@ -1,10 +1,11 @@
 package driver;
 
 import com.sun.jdi.connect.Transport;
+import transport.Car;
 
 import java.util.Objects;
 
-public abstract class Driver {
+public abstract class Driver<T extends Car> {
 
     private String name;
 
@@ -25,7 +26,10 @@ public abstract class Driver {
             this.experience = Math.abs(experience);
         } else
             this.experience = experience;
+
+
     }
+
 
     public final String getName() {
         return name;
@@ -51,9 +55,12 @@ public abstract class Driver {
         this.experience = experience;
     }
 
-    public abstract String start ();
-    public abstract String stop ();
-    public abstract  String refuelTheTransport ();
+
+    public abstract String start();
+
+    public abstract String stop();
+
+    public abstract String refuelTheTransport();
 
     @Override
     public boolean equals(Object o) {

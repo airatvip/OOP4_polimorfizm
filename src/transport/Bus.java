@@ -1,9 +1,6 @@
 package transport;
 
-import transport.Rival;
-import transport.Transport;
-
-public class Bus extends Transport implements Rival {
+public class Bus extends Car implements Rival {
 
 
     public Bus(String brand, String model, double engineVolume) {
